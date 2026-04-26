@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crucible — Recipe Atlas for Infinite Craft</title>
   <meta name="description" content="A recipe graph visualizer for neal.fun's Infinite Craft. Drop your .ic save to see your discoveries as a connected node map.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%97%EF%B8%8F%3C/text%3E%3C/svg%3E">
-
+   <link rel="icon" type="image/png" href="icon.png">
+   <link rel="apple-touch-icon" href="icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
@@ -1064,10 +1064,10 @@ function App() {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-3 border-b border-stone-800/80 bg-gradient-to-r from-stone-950 via-[#100d0a] to-stone-950">
         <div className="flex items-center gap-3">
-          <div className="relative">
-            <Atom className="text-amber-700/80" size={22} strokeWidth={1.4} />
-            <div className="absolute inset-0 blur-md bg-amber-700/30 -z-10" />
-          </div>
+       <div className="relative shrink-0">
+     <img src="icon.png" alt="Crucible" className="w-8 h-8 rounded" />
+     <div className="absolute inset-0 blur-xl bg-amber-600/40 -z-10" />
+   </div>
           <div>
             <h1 style={{ fontFamily: "'Fraunces', serif", fontVariationSettings: "'opsz' 144, 'SOFT' 100" }}
                 className="text-xl tracking-tight text-stone-100 font-light leading-none">
